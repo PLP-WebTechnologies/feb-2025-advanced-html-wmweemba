@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta tags for character set, viewport settings, and description -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Practicing how to build HTML5 web pages.">
+        <title>Assignment Week 2-HTML5 and Forms</title>
+    </head>
+
+    <body>
+        <!-- Header section with navigation links -->
+        <header>
+            <h1>Welcome to HTML5 Elements and Forms</h1>
+            <nav>
+                <a href="#home">Home</a> |
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Section showcasing different HTML5 elements -->
+        <section id="elements">
+            <h2>Different HTML5 Elements</h2>
+
+            <!-- Ordered list using Roman Numerals -->
+            <h2>An ordered list using Roman Numerals</h2>
+            <p>A list showcasing programming languages I would love to explore.</p>
+            <ol type="I">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>PHP</li>
+                <li>Ruby</li>
+            </ol>
+
+            <!-- Image from pexels.com -->
+            <h2>An image from pexels.com</h2>
+            <p>A side table.</p>
+            <img src="bedroom_side_table.jpg" alt="Cozy Bedroom Side Table" width="350" height="400">
+
+            <!-- Table of emergency contacts -->
+            <h2>A contacts Table</h2>
+            <p>These are my emergency contacts.</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Plot 123, Rose Bank, Lusaka, Zambia</td>
+                        <td>123 456 789</td>
+                        <td>john@doe.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Doe</td>
+                        <td>Plot 456, Cinammon Park, Lagos, Nigeria</td>
+                        <td>987 654 321</td>
+                        <td>jane@doe.com</td>
+                    </tr>
+                    <tr>
+                        <td>Josef Wood</td>
+                        <td>111, Rock Veiw, Captown, South Africa</td>
+                        <td>125 528 369</td>
+                        <td>joe@rose.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jim Strange</td>
+                        <td>111, Bark Road, Cairo, Egypt</td>
+                        <td>675 328 954</td>
+                        <td>jim@pyramid.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jackson Brown</td>
+                        <td>853 Reed Back, Harare, Zimbabwe</td>
+                        <td>985 325 756</td>
+                        <td>jack@reed.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Section with a registration form -->
+        <section>
+            <h2>Registration Form</h2>
+            <p>Fill in the form below to register.</p>
+
+            <form action="" method="post">
+                <!-- Input field for name -->
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required minlength="7" maxlength="25"><br><br>
+
+                <!-- Input field for email -->
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <!-- Input field for password -->
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <!-- Input field for date of birth -->
+                <label for="date">Date of Birth:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <!-- Radio buttons for gender selection -->
+                <label for="gender">Gender</label><br>
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="male"> Male <br><br>
+
+                <!-- Checkboxes for programming languages of interest -->
+                <label for="programming_language">Programming Language of Interest:</label><br>
+                <input type="checkbox" name="python" value="python"> py
+                <input type="checkbox" name="javascript" value="javascript"> js
+                <input type="checkbox" name="java" value="java"> java
+                <input type="checkbox" name="php" value="php"> php
+                <input type="checkbox" name="ruby" value="ruby"> ruby <br><br>
+
+                <!-- Dropdown for years of experience -->
+                <label for="experiance">Years of Experience:</label><br>
+                <select name="experience" id="experience">
+                    <option value="0-1">0-1</option>
+                    <option value="1-2">1-2</option>
+                    <option value="2-3">2-3</option>
+                    <option value="3-4">3-4</option>
+                    <option value="4-5">4-5</option>
+                    <option value="5+">5+</option>
+                </select><br><br>
+
+                <!-- Submit button -->
+                <label for="submit"></label>
+                <input type="submit" value="Submit">
+        </section>
+    </body>
+</html>
